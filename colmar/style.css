@@ -78,17 +78,25 @@ body {
 }
 
 .information-main {
-    margin: 32px 24px;
+    padding: 32px 24px;
     display: flex;
 }
 
+#info {
+    width: 60%;
+    padding-right: 24px;
+}
+
+#info img {
+    width: 100%;
+}
+
 .information-main h5 {
-    max-width: 60%;
     font-size: 16px;
 }
 
 .information-main img {
-    width: 60%;
+    /* width: 60%; */
 }
 
 .information-main h1{
@@ -99,12 +107,32 @@ body {
 #detail {
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 #detail img {
     float: left;
     width: 35%;
     height: auto;
+    margin: 16px;
+}
+
+#detail div {
+    display: flex;
+    align-items: center;
+}
+
+#detail .right {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#detail .right h2 {
+    margin-bottom: 8px;
+}
+
+#detail .right h5 {
+    margin-top: 8px;
 }
 
 .start {
@@ -124,12 +152,17 @@ body {
 
 .course img {
     height: auto;
+    width: 100%;
     display: inline-flex;
 }
 
 .course-img {
+    /* display: block; */
     background-color: white;
     margin: 32px;
+    width: 27%;
+    height: 350px;
+    /* flex-basis: 25%; */
 }
 
 .course-img h1 {
@@ -154,19 +187,33 @@ body {
 }
 
 .bottom {
-    display:inline-flex;
+    width: 60%;
 }
 
 .bot {
     text-align: center;
-    padding: 32px;
+    padding: 32px 24px;
+}
+
+.subbot {
+    display: flex;
+}
+
+.subbot video {
+    margin: 32px 24px 24px 0;
+}
+
+.b-right {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
 }
 
 .bottom video {
-    margin: 32px 24px 24px 24px;
+    width: 100%;
 }
 
-.bottom img {
+.subright img {
     height: auto;
     width: 35%;
     margin: 16px;
@@ -175,6 +222,13 @@ body {
 .bot .bottom .text {
     display: flex;
     flex-direction: column;
+    text-align: left;
+}
+ 
+.subright {
+    display: flex;
+    text-align: left;
+    align-items: center;
 }
 
 .footer {
